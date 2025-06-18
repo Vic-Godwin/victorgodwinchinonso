@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Victor</title>
+  <link rel="stylesheet" href="aboutme.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">Victor</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="nav-links">
+      <li><a href="C:\Users\DELL CORE i7\Desktop\My Website\light theme\homepage.html">Home</a></li>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="about-header">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1 class="header-title">About Victor</h1>
+      <button class="read-more-btn" onclick="openPopup('about-popup')">Read More</button>
+    </div>
+  </header>
+
+  <section id="mission-vision" class="section">
+    <!-- <div class="mission"> -->
+      <!-- <h2>Mission Statement</h2> -->
+      <!-- <p><button class="read-more-btn" onclick="openPopup('mission-popup')">Read More</button></p> -->
+    <!-- </div> -->
+    <div id="vision" class="vision">
+      <h2>Vision and Mission Statement</h2>
+      <p><button class="read-more-btn" onclick="openPopup('vision-popup')">Read More</button></p>
+    </div>
+  </section>
+
+  <section id="experience" class="section"> 
+    <h2>Work Experience</h2>
+    <div class="cards">
+      <div class="card" onclick="openExperience(1)">From Sales Clerk to </br> GENERAL MANAGER </br></br> <button class="read-more-btn" onclick="openPopup('manager-popup')">See Details</button> </div>
+      <div class="card" onclick="openExperience(2)">From Math and Science Teacher to </br>PRINCIPAL AND FOUNDER(BMS)</br></br> <button class="read-more-btn" onclick="openPopup('principal-popup')">See Details</button></div>
+      <div class="card" onclick="openExperience(3)">Digital Content Creator & Co-Founder: ONLINE BUSINESS</br></br> <button class="read-more-btn" onclick="openPopup('onlinebusiness-popup')">See Details</button></div>
+      <div class="card" onclick="openExperience(4)">Web Developer & IT Solution Provider: VOLUNTEER SERVICE</br></br> <button class="read-more-btn" onclick="openPopup('volunteer-popup')">See Details</button></div>
+      <div class="card" onclick="openExperience(5)">Stem and Programming Bootcamp. </br> INSTRUCTOR</br></br> <button class="read-more-btn" onclick="openPopup('bootcamp-popup')">See Details</button></div>
+      <div class="card" onclick="openExperience(6)">Drama Director and Lead Actor. </br>Performing Arts</br></br> <button class="read-more-btn" onclick="openPopup('drama-popup')">See Details</button></div>
+      <div class="card" onclick="openExperience(7)">Network and Digital Marketer at </br>Aim Global</br></br> <button class="read-more-btn" onclick="openPopup('marketer-popup')">See Details</button></div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-table">
+      <div class="skill-category">
+        <h3>Programming</h3>
+        <p>Python, Tkinter, Kivy, Django, Flask, PyQt6,Html, CSS, Javascript,postgresql,mysql,sqlite</p>
+        </br><button class="read-more-btn" onclick="openPopup('programming-popup')">Description</button>
+      </div>
+      <div class="skill-category">
+        <h3>Data Science</h3>
+        <p>Python, R, SQL, Excel</br>Implementing...</p>
+        </br><button class="read-more-btn" onclick="openPopup('datascience-popup')">description</button>
+      </div>
+      <div class="skill-category">
+        <h3>Education</h3>
+        <p>Leadership, Collaboration, Communication,Team work</br>Math and science expert...</p>
+        </br><button class="read-more-btn" onclick="openPopup('education-popup')">description</button>
+      </div>
+      <div class="skill-category">
+        <h3>Engineering</h3>
+        <p>AutoCAD, MATLAB, SolidWorks</br>Problem Solving, First Principle Thinking...</p>
+        </br><button class="read-more-btn" onclick="openPopup('engineering-popup')">description</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="awards" class="section">
+    <h2>Awards & Recognition</h2>
+    <ul class="awards-list">
+      <li>World Best Teacher Award</li>
+      <li>Most Influencier Teacher Award</li>
+      <li>Community Builder Medal</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-container">
+      <form action="https://formsubmit.co/vicgodwin95@gmail.com" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+      <div class="social-links">
+        <a href="tel:08164999366"><i class="fas fa-phone"></i> Call Me</a>
+        <a href="mailto:vicgodwin95@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://wa.me/2348164999366" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="#"><i class="fab fa-x"></i> Twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-medium"></i> Medium</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- FULLSCREEN POPUP FOR ABOUT ME -->
+  <div id="about-popup" class="fullscreen-popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup('about-popup')">&times;</button>
+      <h2>About Me</h2>
+      <div class="story-content">
+        <!-- my story goes here!: About me(Victor) -->
+        <section>
+          <h1>Victor Chinonso Godwin — A Spark in the Dark</h1>
+          <p>I wasn’t born into opportunity.<br>
+          I was born into the <em>quiet noise of struggle</em> — where potential flickered like a
+          weak bulb during yet another blackout, and dreams had to fight for air.
+          But some fires are born where light is absent.<br>
+          And mine?
+          It didn’t just burn — <strong>it built</strong>.</p>
+        </section>
+        
+        <section>
+          <h2>Where Others Saw Limitation, I Learned to Launch</h2>
+          <p>I grew up in a world that taught me to wait.</p>
+          <ul>
+            <li>Wait for the lights to come on.</li>
+            <li>Wait for help that never arrived.</li>
+            <li>Wait for systems to notice the unheard.</li>
+          </ul>
+          <p>But I was never one for waiting. So I started building.</p>
+        
+          <p>
+            I built <strong>boot camps</strong> when students couldn’t afford tutors.
+            I built <strong>academic hubs</strong> when schools couldn’t carry everyone.
+            I built <strong>community</strong>, even when it was just me, a chalkboard, and borrowed data.
+            And later, I helped rebuild a struggling startup — not with funding, but with fire.
+          I didn’t know it then, but every act of service was more than just survival.
+          It was preparation. A <em>blueprint</em> for the life I’m now engineering.</p>
+        </section>
+        
+        <section>
+          <h2>Not Just Power — Possibility</h2>
+          <p>I’m deeply drawn to wireless power — not just as a technology, but as a metaphor.
+          A world where energy flows freely, without cords or gatekeepers, is a world I believe in
+          But my vision doesn’t end there:
+        
+          I see a future where <strong>interdisciplinary innovation</strong> replaces isolation.
+          Where engineering meets <em>biohealth</em>, where computation meets <em>compassion</em>, where power means both electricity and <em>empowerment</em>.
+          Whether through biomedical engineering, sustainable systems, or frontier research — I want to stand at the <strong>crossroads of invention and justice</strong>,creating tools that don't just work, but heal.</p>
+        </section>
+        
+        <section>
+          <h2>My Tools Are Diverse. My Mission Is Singular.</h2>
+          <p>I work with Python, MATLAB, AutoCAD, data science, and web frameworks — not for résumé lines, but to <strong>solve what matters</strong>.
+          I design for the overlooked. I build systems that scale human potential.
+        
+            I direct <strong>dramas</strong> to tell stories that move.
+            I host <strong>coding boot camps</strong> that light up minds.
+            I design <strong>award nights</strong> in my church to honor the unnoticed.
+          </p>
+          <blockquote>
+            <em>The future deserves better than what it inherited. And I intend to give it just that.</em>
+          </blockquote>
+        </section>
+        
+        <section>
+          <h2>So Who Am I?</h2>
+          <p>I’m a <strong>servant-leader</strong>, born of resilience and baptized in initiative.
+          A technologist with a storyteller’s soul.
+          A visionary who knows the cost of delay — and the power of action.</p>
+  
+          <p>I build because I must.<br>
+          Because too many people are still waiting.
+          Because I believe that with the right mix of <em>faith</em>, <em>fire</em>, and <em>function</em>, we can <strong>light up more than rooms</strong> —
+          We can <strong>light up legacies</strong>.</p>
+        </section>
+        
+        <section>
+          <h2>Let’s Build the Unseen</h2>
+          <p>If you’re a researcher, a founder, a school, or a soul who believes in radical possibility — let’s connect.
+          Because I’m not here for noise.
+          I’m here for <strong>impact</strong>.</p>
+        
+          <blockquote>
+            <strong>Victor — Where Passion Meets Precision, and Purpose Finds Power.</strong>
+          </blockquote>
+        </section>
+        
+        <section>
+          <h3>Want to Reach Out?</h3>
+          <p>Whether you're building the next breakthrough, assembling a mission-driven team, or just want to collaborate on something meaningful — <strong>I'd love to hear from you</strong>.
+        📬 <em>Let’s dream, build, and make history — together.</em></p>
+        
+          <section>
+          <h2>Let’s Build the Unseen</h2>
+          <p>If you're seeking someone who can merge vision with velocity, theory with transformation — you’re not just looking for talent. <strong>You’re looking for fire with direction.</strong>
+          I don’t enter rooms to observe. I arrive to contribute. To elevate. To rebuild what others have written off.</p>
+          From forgotten classrooms to global challenges, from midnight code to morning leadership — I bring <em>faith in people</em>, <strong>precision in execution</strong>, and an <strong>obsession with impact</strong>.</p>
+        
+          <blockquote>
+            <strong>I’m not waiting for the future to arrive. I’m already building it — with light in my hands and legacy in my heart.</strong>
+          </blockquote>
+        
+          <p>So if your mission is bold, if your team dares to innovate, if your institution is ready for someone who moves culture and outcomes —</p>
+        
+          <h3 style="margin-top:1em;"><strong>Then don’t just remember my name. Build with it.</strong></h3>
+        
+          <p><em>Victor — where vision takes root, and revolutions begin quietly.</em></p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- FULLSCREEN POPUP FOR MISSION -->
+  <div id="mission-popup" class="fullscreen-popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup('mission-popup')">&times;</button>
+      <h2>Mission Statement</h2>
+      <div class="story-content">
+        <p>[Insert your detailed Mission story here]</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FULLSCREEN POPUP FOR VISION -->
+  <div id="vision-popup" class="fullscreen-popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup('vision-popup')">&times;</button>
+      <h2>Vision & Mission</h2>
+      <div class="story-content">
+        <section id="vision-mission" style="padding: 2rem; max-width: 900px; margin: auto;">
+          <h1 style="font-size: 2.5rem; text-align: center; margin-bottom: 1.5rem;">
+            🌍 Grand Vision
+          </h1>
+          <p style="font-size: 1.2rem; line-height: 1.8; text-align: center; font-style: italic;">
+            To empower a connected, healthy, secure, sustainable, and inspired world — through the fusion of advanced technology, human-centered innovation, and purpose-driven storytelling.
+          </p>
+        
+          <hr style="margin: 2rem auto; width: 60%; border-top: 1px solid #ccc;">
+        
+          <h2 style="font-size: 2rem; margin-top: 2rem;">🚀 Mission Statement</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8;">
+            To design, develop, and deploy breakthrough solutions that enhance human life, protect global systems, democratize innovation, and ignite movements that shape a better future — blending engineering, empathy, and vision into a force for good.
+          </p>
+        
+          <blockquote style="margin-top: 2rem; font-size: 1.3rem; font-weight: bold; font-style: italic; color: #333; border-left: 4px solid #00a86b; padding-left: 1rem;">
+            Innovation is not enough — it must heal, protect, power, and inspire.
+          </blockquote>
+        </section>
+        
+      </div>
+    </div>
+  </div>
+
+    <!-- FULLSCREEN POPUP FOR General manager -->
+    <div id="manager-popup" class="fullscreen-popup">
+      <div class="popup-content">
+        <button class="close-btn" onclick="closePopup('manager-popup')">&times;</button>
+        <h2>General Manager: Alex Enterprises</h2>
+        <div class="story-content">
+          <p>[Insert your detailed Vision story here]</p>
+        </div>
+      </div>
+    </div>
+
+      <!-- FULLSCREEN POPUP FOR principal -->
+  <div id="principal-popup" class="fullscreen-popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup('principal-popup')">&times;</button>
+      <h2>Principal And Founder of The Brilliant Mind Society(BMS)</h2>
+      <div class="story-content">
+        <p>[Insert your detailed Vision story here]</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="onlinebusiness-popup" class="fullscreen-popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup('onlinebusiness-popup')">&times;</button>
+      <h2>Digital Content Creator and Co-Founder: Online Business</h2>
+      <div class="story-content">
+        <p>[Insert your detailed Vision story here]</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="volunteer-popup" class="fullscreen-popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup('volunteer-popup')">&times;</button>
+      <h2>Volunteer Web Developer and IT Solution Provider</h2>
+      <div class="story-content">
+        <p>[Insert your detailed Vision story here]</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="bootcamp-popup" class="fullscreen-popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup('bootcamp-popup')">&times;</button>
+      <h2>Instructor: Stem and Programming Bootcamp</h2>
+      <div class="story-content">
+        <p>[Insert your detailed Vision story here]</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="drama-popup" class="fullscreen-popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup('drama-popup')">&times;</button>
+      <h2>Drama director and Lead Actor</h2>
+      <div class="story-content">
+        <p>[Insert your detailed Vision story here]</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="marketer-popup" class="fullscreen-popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup('marketer-popup')">&times;</button>
+      <h2>Network and Digital Marketer</h2>
+      <div class="story-content">
+        <p>[Insert your detailed Vision story here]</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="principal-popup" class="fullscreen-popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup('principal-popup')">&times;</button>
+      <h2>Principal And Founder of The Brilliant Mindd Society(bms)</h2>
+      <div class="story-content">
+        <p>[Insert your detailed Vision story here]</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="programming-popup" class="fullscreen-popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup('programming-popup')">&times;</button>
+      <h2>Programming</h2>
+      <div class="story-content">
+        <p>[Insert your detailed Vision story here]</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="datascience-popup" class="fullscreen-popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup('datascience-popup')">&times;</button>
+      <h2>AI And Data Science</h2>
+      <div class="story-content">
+        <p>[Insert your detailed Vision story here]</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="engineering-popup" class="fullscreen-popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup('engineering-popup')">&times;</button>
+      <h2>Engineering Skills</h2>
+      <div class="story-content">
+        <p>[Insert your detailed Vision story here]</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="education-popup" class="fullscreen-popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup('education-popup')">&times;</button>
+      <h2>Educational Skills</h2>
+      <div class="story-content">
+        <p>[Insert your detailed Vision story here]</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="about.js"></script>
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
+
+  <script>
+    function openPopup(id) {
+      document.getElementById(id).style.display = 'block';
+      document.body.style.overflow = 'hidden'; // Prevent background scroll
+    }
+
+    function closePopup(id) {
+      document.getElementById(id).style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+
+  
+</body>
+</html>
